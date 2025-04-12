@@ -10,11 +10,11 @@
 
 @layer utilities {
   .nav-bg {
-    background-color: rgb(52, 52, 52);
+    background-color: #3a3a3a;
   }
 
   .main-bg {
-    background-color: #f7f7f7;
+    background-color: #f3eee2;
   }
 
   .center {
@@ -23,16 +23,23 @@
   }
 
   .nav-text-cl {
-    color: #f8f4e1;
+    color: #f8f2ff;
   }
 
   .text-cl {
-    color: #f5efff;
+    color: #f8f2ff;
   }
 
   .button-cl {
     background-color: #8f9779;
     border-color: #8f9779;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .text-cl-h1 {
+    color: #674a2c;
+  }
+
+  .text-cl-tag {
+    background-color: #fee0bf;
   }
 }

@@ -1,18 +1,26 @@
 import React from "react";
+import PlaceCard from "./HomePlaceCard/PlaceCard";
+import couple from "../../assets/couple.png";
+import star from "../../assets/favorites.png";
+import cloud from "../../assets/communication.png";
+import photo from "../../assets/cafee.jpg";
 
 const HomePage = () => {
   return (
     <>
-      <div className="grid grid-row-2 main-bg bg-[url('src/assets/cafee.jpg')] bg-cover bg-center h-screen">
+      <div className="grid grid-row-2 main-bg bg-[url('src/assets/cafee.jpg')] bg-cover bg-center h-screen overflow-hidden">
         <div className="center justify-center p-1 mt-80">
           <h1 className="text-cl text-6xl font-extrabold">
             Your Office, Anywhere.
           </h1>
         </div>
         <div className="center justify-center p-1 my-15 mt-10 flex-col space-y-2">
-          <h1 className="text-cl text-4xl font-bold my-25 p-2 border-4 rounded-3xl button-cl">
-            <a href="#">Find Your Perfect Workspace</a>
-          </h1>
+          <a
+            href="#"
+            className="text-cl text-4xl font-bold my-25 p-2 border-4 rounded-3xl button-cl opacity-75 hover:opacity-100 ease-in-out duration-300"
+          >
+            Find Your Perfect Workspace
+          </a>
           <h1 className="text-cl text-4xl font-bold">
             Fuel Up. Plug In. Get Things Done.
           </h1>
@@ -20,12 +28,71 @@ const HomePage = () => {
             Because Great Ideas Deserve Great Spaces.
           </h1>
           <p className="text-cl">Couldn't find your favorite place</p>
-          <p className="text-cl p-1.5 border-4 rounded-3xl button-cl">
-            <a href="#">Suggest a new place right here</a>
-          </p>
+          <a
+            href="#"
+            className="text-cl p-1.5 border-4 rounded-3xl button-cl opacity-75 hover:opacity-100 ease-in-out duration-300"
+          >
+            Suggest a new place right here
+          </a>
         </div>
       </div>
-      <div className="center justify-center p-8"></div>
+      <div className="main-bg">
+        <div className="center justify-center p-8">
+          <h1 className="text-cl-h1 text-4xl font-bold mt-10">
+            Explore spaces
+          </h1>
+        </div>
+        <div className="center justify-center p-8 mb-8">
+          <PlaceCard
+            rate={2}
+            title="Cedar"
+            tags={["Coffee", "Wi-Fi", "Quiet"]}
+            image={photo}
+          />
+          <PlaceCard
+            rate={3}
+            title="Sadaviga"
+            tags={["Pidari", "Wi-Fi", "Quiet"]}
+            image={photo}
+          />
+          <PlaceCard
+            rate={4}
+            title="Gatten"
+            tags={["Coffee", "Wi-Fi", "NIgerri"]}
+            image={photo}
+          />
+        </div>
+      </div>
+      <div className="bg-amber-50">
+        <div className="center justify-center p-8">
+          <h1 className="text-cl-h1 text-4xl font-bold mt-10">For Coworkers</h1>
+        </div>
+        <div className="center justify-center m-10">
+          <div className="center justify-center flex-col p-8 pr-80">
+            <img src={couple} alt="image" className="h-70 w-70 mb-5" />
+            <p className="text-4xl text-cl-h1 font-bold leading-relaxed text-center">
+              Connect with fellow <br />
+              remote workers
+            </p>
+          </div>
+          <div className="center justify-center flex-col p-8  pr-80">
+            <img src={star} alt="image" className="h-70 w-70 mb-5" />
+            <p className="text-4xl text-cl-h1 font-bold leading-relaxed text-center">
+              Save your <br />
+              favorite spots
+            </p>
+          </div>
+          <div className="center justify-center flex-col p-8">
+            <img src={cloud} alt="image" className="h-70 w-70 mb-5" />
+            <p className="text-4xl text-cl-h1 font-bold leading-relaxed text-center">
+              Leave reviews <br />& share vibes
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="main-bg center justify-center p-8">
+        <h1>saijogjoiskjsd</h1>
+      </div>
     </>
   );
 };
