@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage/HomePage";
 import LoginPage from "./components/Authentication/LoginPage";
 import Navbar from "./components/Navbar/Navbar";
 import RegisterPage from "./components/Authentication/RegisterPage";
+import AllCafes from "./components/AllCafes/AllCafes";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <AllCities /> */}
       {/* <LoginPage /> */}
-      <RegisterPage />
+      {/* <RegisterPage /> */}
+      <AllCafes />
       <Fotter />
     </div>
   );
