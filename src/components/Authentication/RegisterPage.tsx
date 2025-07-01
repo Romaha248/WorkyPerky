@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Link } from "react-router-dom";
 
 const cities = [
   "New York",
@@ -153,9 +154,9 @@ const RegisterPage = () => {
 
         <p className="mt-6 text-center text-sm text-gray-500">
           Already have an account?{" "}
-          <a href="/login" className="underline font-medium hover:text-black">
+          <Link to="/login" className="underline font-medium hover:text-black">
             Sign in
-          </a>
+          </Link>
         </p>
       </div>
     </div>

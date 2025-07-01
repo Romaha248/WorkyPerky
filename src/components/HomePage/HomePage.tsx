@@ -5,6 +5,7 @@ import star from "../../assets/favorites.png";
 import cloud from "../../assets/communication.png";
 import photo from "../../assets/cafee.jpg";
 import coffee from "../../assets/coffee-cup.png";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -16,12 +17,12 @@ const HomePage = () => {
           </h1>
         </div>
         <div className="center justify-center p-1 my-15 mt-10 flex-col space-y-2">
-          <a
-            href="#"
+          <Link
+            to="/cities"
             className="text-cl text-4xl font-bold my-25 px-4 py-2 border-4 rounded-full button-cl opacity-75 hover:opacity-100 ease-in-out duration-300"
           >
             Find Your Perfect Workspace
-          </a>
+          </Link>
           <h1 className="text-cl text-4xl font-bold">
             Fuel Up. Plug In. Get Things Done.
           </h1>
@@ -102,12 +103,12 @@ const HomePage = () => {
           Find your next favorite spot to work. Discover cozy cafes, modern
           workspaces, and plug-in ready corners around you.
         </p>
-        <a
-          href="#"
+        <Link
+          to="/cities"
           className="bg-[#a67c52] text-white px-8 py-4 mb-8 rounded-full shadow-lg hover:bg-[#8a6743] transition"
         >
           Explore Spaces
-        </a>
+        </Link>
         <p className="text-[#7a6651] mb-1">
           Couldn't find your favorite place :(
         </p>

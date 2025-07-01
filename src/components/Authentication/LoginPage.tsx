@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Link } from "react-router-dom";
 
 const schema = z.object({
   email: z
@@ -79,9 +80,12 @@ const LoginPage = () => {
 
         <p className="mt-6 text-center text-sm text-gray-500">
           Don't have an account?{" "}
-          <a href="#" className="underline font-medium hover:text-black">
+          <Link
+            to="/register"
+            className="underline font-medium hover:text-black"
+          >
             Register
-          </a>
+          </Link>
         </p>
       </div>
     </div>

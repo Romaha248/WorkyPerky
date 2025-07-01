@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface AllCitiesProps {
   cities: {
@@ -27,8 +28,6 @@ const AllCities = () => {
     },
   };
 
-  console.log(citiesData.cities);
-
   return (
     <div className="bg-white mt-25 center justify-center flex-col p-8">
       <h1 className="text-5xl font-bold text-black mb-12">All Cities</h1>
@@ -39,12 +38,12 @@ const AllCities = () => {
             <ul className="list-none center justify-center flex-wrap gap-4">
               {cafes.map((cafe, index) => (
                 <li key={index} className="mb-12">
-                  <a
-                    href="#"
+                  <Link
+                    to={`/cities/${cafe}`}
                     className="text-gray-800 text-xl rounded-xl px-4 py-2 mx-3 shadow-xl  hover:bg-black hover:text-white transition duration-300 ease-in-out hover:shadow-lg"
                   >
                     {cafe}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

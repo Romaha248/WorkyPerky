@@ -9,12 +9,12 @@ const Fotter = () => {
 
   return (
     <footer className="bg-amber-50">
-      <div className="center justify-center">
+      <div className="center justify-center mt-6">
         <a
           href="mailto:romanbezverkhyi5@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="h-14 w-14 mx-6 mt-6"
+          className="h-14 w-14 mx-6"
         >
           <img src={email} alt="email" className="h-full w-full" />
         </a>
@@ -22,7 +22,7 @@ const Fotter = () => {
           href="https://github.com/Romaha248"
           target="_blank"
           rel="noopener noreferrer"
-          className="h-14 w-14 mx-6 mt-6"
+          className="h-14 w-14 mx-6"
         >
           <img src={github} alt="github" className="h-full w-full" />
         </a>
@@ -30,7 +30,7 @@ const Fotter = () => {
           href="https://www.instagram.com/tiurip_ip_ip/"
           target="_blank"
           rel="noopener noreferrer"
-          className="h-14 w-14 mx-6 mt-6"
+          className="h-14 w-14 mx-6"
         >
           <img src={inst} alt="inst" className="h-full w-full" />
         </a>
@@ -38,7 +38,7 @@ const Fotter = () => {
           href="https://www.linkedin.com/in/roman-bezverkhyi-039b0b350/"
           target="_blank"
           rel="noopener noreferrer"
-          className="h-14 w-14 mx-6 mt-6"
+          className="h-14 w-14 mx-6"
         >
           <img src={linkedin} alt="linkedin" className="h-full w-full" />
         </a>

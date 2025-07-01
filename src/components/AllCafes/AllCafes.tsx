@@ -2,6 +2,7 @@ import React from "react";
 import FilterIcon from "./FilterIcon";
 import wifi from "../../assets/wi-fi.png";
 import PlaceCard from "./PlaceCard";
+import { useParams } from "react-router-dom";
 
 interface FiltersProps {
   filter: {
@@ -26,6 +27,10 @@ const AllCafes = () => {
     },
   };
 
+  const { cafe } = useParams<{ cafe: string }>();
+
+  console.log(cafe);
+
   return (
     <div className="bg-white mt-10 center px-8 pt-8 h-[80vh] flex gap-10">
       <div className="w-[25%] overflow-y-auto h-full pr-4">
@@ -44,10 +49,10 @@ const AllCafes = () => {
         ))}
       </div>
       <div className="flex-1 overflow-y-auto h-full">
-        <h2 className="text-5xl font-bold mb-6">City Name</h2>
+        <h2 className="text-5xl font-bold mb-6">{cafe}</h2>
         <p className="text-xl mb-10">
           The best work and study-friendly cafes, restaurants, libraries, and
-          hotel lobbies in City Name. Expand your coworking map with our list of
+          hotel lobbies in {cafe}. Expand your coworking map with our list of
           casual spots with free and reliable Wi-Fi, ample power sockets, and
           comfy seating areas!
         </p>
