@@ -30,12 +30,12 @@ const HomePage = () => {
             Because Great Ideas Deserve Great Spaces.
           </h1>
           <p className="text-cl">Couldn't find your favorite place :(</p>
-          <a
-            href="#"
+          <Link
+            to="/suggest"
             className="text-cl px-3 py-1 border-4 rounded-full button-cl opacity-75 hover:opacity-100 ease-in-out duration-300"
           >
             Suggest a new place right here
-          </a>
+          </Link>
         </div>
       </section>
       <section className="main-bg">
@@ -112,12 +112,12 @@ const HomePage = () => {
         <p className="text-[#7a6651] mb-1">
           Couldn't find your favorite place :(
         </p>
-        <a
-          href="#"
+        <Link
+          to="/suggest"
           className="text-cl bg-[#a67c52] px-4 py-2 mb-12 border-4 rounded-full hover:bg-[#8a6743] transition"
         >
           Suggest a new place right here
-        </a>
+        </Link>
       </section>
     </>
   );

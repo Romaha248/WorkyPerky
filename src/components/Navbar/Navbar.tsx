@@ -36,7 +36,7 @@ const Navbar = () => {
         <IconLink title="ALL CITIES" icon={allCities} link="/cities" />
         <IconLink title="LOGIN" icon={login} link="/login" />
         <IconLink title="REGISTER" icon={register} link="/register" />
-        <IconLink title="SUGGEST PLACES" icon={plus} link="/" />
+        <IconLink title="SUGGEST PLACES" icon={plus} link="/suggest" />
       </div>
     </nav>
   );
