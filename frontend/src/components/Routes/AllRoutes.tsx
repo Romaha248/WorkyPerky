@@ -6,12 +6,12 @@ import HomePage from "../HomePage/HomePage";
 import LoginPage from "../Authentication/LoginPage";
 import RegisterPage from "../Authentication/RegisterPage";
 import AllCafes from "../AllCafes/AllCafes";
-import ScrollToTop from "../../addons/ScrollToTop";
+// import ScrollToTop from "../../addons/ScrollToTop";
 import SuggestPlace from "../SuggestPlace/SuggestPlace";
 
 const AllRoutes: React.FC = () => (
   <>
-    <ScrollToTop />
+    {/* <ScrollToTop /> */}
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/login" element={<LoginPage />} />
@@ -20,6 +20,7 @@ const AllRoutes: React.FC = () => (
       <Route path="/cities/:cafe" element={<AllCafes />} />
       <Route path="/suggest" element={<SuggestPlace />} />
     </Routes>
+    {/* <ScrollRestoration /> */}
   </>
 );
 
