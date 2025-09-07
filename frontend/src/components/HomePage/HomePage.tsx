@@ -62,7 +62,7 @@ const HomePage = () => {
           <PlaceCard
             rate={4}
             title="Gatten"
-            tags={["Coffee", "Wi-Fi", "NIgerri"]}
+            tags={["Coffee", "Wi-Fi", "Quiet"]}
             image={photo}
           />
         </div>
